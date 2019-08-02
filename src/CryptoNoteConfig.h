@@ -14,7 +14,7 @@ const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
 //TODO Currency-specific address prefix
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x1b7e97be; // Адрес кошелька начинается с знака "Ytube"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0xfbc; // Адрес кошелька начинается с знака "Ytube"
 //TODO Choose maturity period for your currency
 const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
@@ -76,7 +76,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 //TODO Put here the name of your currency
-const char     CRYPTONOTE_NAME[]                             = "youtube"; // Название вашей монеты
+const char     CRYPTONOTE_NAME[]                             = "yucoin"; // Название вашей монеты
 const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff000181adf0eb1d029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121012b162f5cfb50b68aad8fb9783abe43ab35e6f616e86d65c0734a1816d36be4bb";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
@@ -107,9 +107,8 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "0000000000000000
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-  "35.166.148.179:48734",
-  "172.31.26.73:48734", // IP Адреса и Порты подключения Узлов семян. Без них хрен заработает. Установить демона на VPS серверах
-  "93.177.34.165:48734"
+  "118.24.134.127:48734",
+  "119.27.179.227:48734" // IP Адреса и Порты подключения Узлов семян. Без них хрен заработает. Установить демона на VPS серверах
 };
 
 struct CheckpointData {
